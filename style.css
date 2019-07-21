@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    margin: 15vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    perspective: 1000px;
+
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    /* border-radius: 10px; */
+}
+.frente, .verso{
+    position: absolute;
+}
+
+.verso{
+     backface-visibility: hidden;  
+}
+
+.frente{
+    transform: rotateY(180deq);
+}
+
+.card{
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    margin: 6px;
+    transform-style: preserve-3d;
+    transition: transform.5s;
+    position: relative;
+}
+
+.card.flip{
+    transform: rotateY(180deg);
+}
+
+.card:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px black;
+}
