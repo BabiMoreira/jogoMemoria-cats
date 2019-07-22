@@ -1,19 +1,44 @@
 body{
     margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    background-color:  #400711;
+}
+
+header{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #BF3945;
+    border-bottom: 10px ridge white;
+}
+
+footer{
+    height: 20px;
+    width: 100%;
+    background-color: #BF3945; 
+}
+
+h1{
+ font-family: 'Poiret One', cursive;
+ font-size: 40px;
+ text-shadow: 2px 2px black;
+ color: #F2BBBF;
 }
 
 main{
-    margin: 15vh;
+    margin: 10vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     perspective: 1000px;
 
 }
 
-img{
+div img{
     width: 150px;
     height: 150px;
     /* border-radius: 10px; */
@@ -48,3 +73,4 @@ img{
     cursor: pointer;
     box-shadow: 0 0 10px black;
 }
+
